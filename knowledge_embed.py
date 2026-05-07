@@ -89,7 +89,7 @@ for file_path in files:
                 chunk_id = str(uuid.uuid4())
 
             if chunk_id in seen_ids:
-                print(f"⚠️ duplicate: {chunk_id}, skip")
+                print(f"duplicate: {chunk_id}, skip")
                 continue
 
             seen_ids.add(chunk_id)
